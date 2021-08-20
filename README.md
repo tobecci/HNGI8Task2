@@ -2,11 +2,12 @@
 
 &nbsp;
 
-# HNGI8 STAGE 2 Task A
+# HNGI8 STAGE 2 Task B
 
 ## Question
-Compulsory: Write a simple program that prints your name using your language of choice.
+build an interactive resumè page that contains a form. Host the page on heroku.
 
 
 ## Answer
-printName.js
+
+index.html
