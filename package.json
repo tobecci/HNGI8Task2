@@ -1,0 +1,19 @@
+{
+  "name": "stage2",
+  "version": "1.0.0",
+  "description": "<img src=\"./assets/pictures/hng.png\" width=\"200\"><br/><br/> <img src=\"./assets/pictures/zuri.svg\" width=\"200\"><br/><br/> <img src=\"./assets/pictures/i4g.png\" width=\"200\"><br/><br/> # HNGI8 STAGE 2 Task B",
+  "main": "form.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tobecci/HNGI8Task2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tobecci/HNGI8Task2/issues"
+  },
+  "homepage": "https://github.com/tobecci/HNGI8Task2#readme"
+}
