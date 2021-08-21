@@ -1,0 +1,23 @@
+{
+  "name": "stage2",
+  "version": "1.0.0",
+  "description": "resume website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tobecci/HNGI8Task2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tobecci/HNGI8Task2/issues"
+  },
+  "homepage": "https://github.com/tobecci/HNGI8Task2#readme",
+  "dependencies": {
+    "@types/node": "^16.7.1"
+  }
+}
