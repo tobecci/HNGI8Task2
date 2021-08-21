@@ -1,0 +1,201 @@
+@font-face {
+    font-family: 'Circular';
+    src: url('./assets/fonts/CircularStd-Book.ttf');
+}
+
+body{
+    height: 100vh;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 15vh 1fr 20vh;
+    grid-template-areas: 
+    ". ."
+    "left-section right-section"
+    "footer footer"
+    ;
+    row-gap: 30px;
+    column-gap: 50px;
+}
+
+.left-section{
+    grid-area: left-section;
+    /* background-color: #1e1e1e; */
+    margin: 5px;
+    padding: 5px;
+    justify-self: right;
+    display: grid;
+    height: 300px;
+    color: white;
+    align-self: center;
+    grid-template-columns: 1fr;
+}
+
+.left-section>div{
+    /* background-color: red; */
+    margin: 5px;
+}
+.right-section{
+    grid-area:right-section;
+    background-color: #1e1e1e;
+    margin: 5px;
+    padding: 5px;
+    justify-self: self-start;
+    display: grid;
+    align-items: center;
+    height: fit-content;
+    align-self: center;
+    padding: 15px;
+}
+
+.left-section, .right-section{
+    width: 500px;
+    border-radius: 7px;
+}
+
+.right-section>form{
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 10px;
+    height: 300px;
+}
+
+
+.footer{
+    grid-area:footer;
+    background-color: #1e1e1e;
+    margin: 5px;
+    border-radius: 7px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;   
+}
+
+.footer>div{
+    width: 200px;
+    justify-self: center;
+    align-self: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.footer>div>a>img{
+    width: 200px;
+}
+
+form>*{
+    background-color: transparent;
+    font-family: 'Circular';
+    border:white solid 1px;
+    padding-left: 10px;
+    outline: none;
+    color: white;
+    border-radius: 7px;
+}
+
+#name{
+    color: white;
+    font-size: 50px;
+    font-family: 'Circular';
+    margin-left: -10px;
+    margin-bottom: 10px;
+}
+
+#submit{
+    width: 80px;
+    height: 40px;
+    background-color: #075f1a;
+    border:none;
+    font-size: 16px ;
+}
+
+[name="name"], [name="email"]{
+    height: 40px;
+}
+
+#social-icons{
+
+}
+
+#social-icons>a>img{
+    width: 30px;
+    margin-left: 40px;
+}
+
+#social-icons>a{
+    text-decoration:none;
+}
+
+#social-icons>:nth-child(1)>img{
+    margin-left: 0px;
+}
+
+#rotating-texts{
+    color: #4b4b4b;
+    font-size: 18px;
+}
+
+.typed{
+    color: #075f1a;
+    font-size: 22px;
+}
+
+
+@media (max-width: 500px){
+    body{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "left-section"
+    "right-section"
+    "footer"
+    ;
+    width: 90%;
+    margin: auto;
+
+    }
+
+    .left-section{
+        justify-self: center;
+        width: min-content;
+        height: max-content;
+        margin-left: -14%;
+    }
+
+    .right-section{
+        justify-self: center;
+        width: fit-content;
+        height: max-content;
+    }
+
+    .footer{
+        grid-template-columns: 1fr;
+        width: fit-content;
+        justify-self: center;
+    }
+
+    .footer>div{
+        margin: 30px;
+       
+    }
+
+    #description{
+        width: 100%;
+    }
+
+    #social-icons>a>img{
+        width: 25px;
+        margin-left: 20px;
+    }
+
+    #rotating-texts{
+        font-size: 14px;
+    }
+    
+    .typed{
+        font-size: 18px;
+        display: block;
+    }
+}

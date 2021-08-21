@@ -1,4 +1,4 @@
-![HNG Logo](pictures/brand-logo.png)
+![HNG Logo](assets/pictures/hng.png)
 
 &nbsp;
 
